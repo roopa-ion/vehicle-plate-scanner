@@ -1,6 +1,9 @@
 name: Build Android APK
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -26,9 +29,4 @@ jobs:
       - name: Build Android APK
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
-        run: |
-          eas build \
-            --platform android \
-            --profile preview \
-            --non-interactive \
-            --wait
+        run: eas build --platform android --profile preview --non-interactive --wait
