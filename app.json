@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Vehicle Plate Scanner",
+    "slug": "vehicle-plate-scanner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "android": {
+      "package": "com.vehicleplatescanner.app",
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Vehicle Plate Scanner to access your photos."
+        }
+      ]
+    ]
+  }
+}
